@@ -1,1 +1,14 @@
-<p>countries works!</p>
+<div class="card-deck">
+    <span *ngFor="let country of countries">
+        <div class="card" style="width: 18rem;">
+            <img [src]="country.flag" class="card-img-top" alt="flag" width="180" height="180">
+            <div class="card-body">
+                <h5 class="card-title">{{country.name}}</h5>
+                <p class="card-text">Capital: {{country.capital}}</p>
+                <p class="card-text">Region: {{country.region}}</p>
+            </div>
+        </div>
+        <br>
+    </span>
+</div>
+
